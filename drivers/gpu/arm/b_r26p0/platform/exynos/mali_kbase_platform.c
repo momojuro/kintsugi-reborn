@@ -42,7 +42,9 @@ static gpu_dvfs_info gpu_dvfs_table_default[DVFS_TABLE_ROW_MAX];
 
 struct kbase_device *pkbdev;
 static int gpu_debug_level;
+#ifdef CONFIG_MALI_EXYNOS_TRACE
 static int gpu_trace_level;
+#endif
 
 struct kbase_device *gpu_get_device_structure(void)
 {
